@@ -3,8 +3,8 @@ description: Sets up Kotlin Native and Cocoapods
 runs:
   using: "composite"
   steps:
-    - shell: bash
-      run: ./gradlew :shared:generateDummyFramework
+#    - shell: bash
+#      run: ./gradlew :shared:generateDummyFramework
 
     - name: Set up cocoapods
       uses: maxim-lobanov/setup-cocoapods@v1
