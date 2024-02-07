@@ -27,7 +27,7 @@ jobs:
       - name: Job set up
         uses: ./.github/actions/job-set-up
 
-      - run: ./gradlew :androidApp:assemble
+      - run: ./gradlew :composeApp:assemble
 
   Desktop:
     if: ${{ inputs.shouldRunKmp == 'true' || inputs.shouldRunDesktop == 'true' }}
