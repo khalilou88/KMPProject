@@ -27,7 +27,7 @@ jobs:
       - name: Job set up
         uses: ./.github/actions/job-set-up
 
-      - run: ./gradlew clean testDebug -p androidApp/
+      - run: ./gradlew clean testDebug -p composeApp/
 
   Desktop:
     if: ${{ inputs.shouldRunKmp == 'true' || inputs.shouldRunDesktop == 'true' }}
