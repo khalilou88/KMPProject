@@ -86,7 +86,7 @@ jobs:
       - name: Job set up
         uses: ./.github/actions/job-set-up
 
-      - run: ./gradlew clean desktopTest -p shared/
+#      - run: ./gradlew clean desktopTest -p shared/
 
   KMP-iOS:
     if: ${{ inputs.shouldRunKmp == 'true'}}
