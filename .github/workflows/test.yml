@@ -39,7 +39,8 @@ jobs:
       - name: Job set up
         uses: ./.github/actions/job-set-up
 
-      - run: ./gradlew clean jvmTest -p composeApp/
+#      - run: ./gradlew clean jvmTest -p composeApp/
+      - run: ./gradlew clean test -p composeApp/
 
   iOS:
 #    if: ${{ inputs.shouldRunKmp == 'true' || inputs.shouldRunIos == 'true' }}
