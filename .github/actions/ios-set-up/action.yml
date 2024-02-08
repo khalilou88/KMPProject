@@ -15,4 +15,5 @@ runs:
       name: Install Dependencies
       run: |
         cd iosApp
+        pod init
         pod install --verbose
